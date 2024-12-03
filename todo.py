@@ -54,7 +54,7 @@ def show_menu(): #메뉴를 보여주는 함수
     print("3. 할 일 완료")
     print("4. 할 일 삭제")
     print("5. 종료")
-
+    
 def main():
     while True:
         show_menu()
