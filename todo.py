@@ -37,6 +37,10 @@ def complete_task(task_number):#할 일 완료
     
     else :
         print("유효하지 않은 번호입니다. 다시 확인 후 입력해주세요.")
+<<<<<<< HEAD
+=======
+
+>>>>>>> divelop
 
 def delete_task(task_number):#할 일 삭제
     tasks =  load_task()
