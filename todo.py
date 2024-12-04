@@ -16,6 +16,7 @@ def add_task(task_name): #할 일 추가 함수
     tasks = load_task() # 파일이 있다면 가져와
     task = {'name':task_name, "completed":False} #파이썬 공부하기에 대한 데이터가 들어갔어
     tasks.append(task)
+    save_task(tasks)
     
 
 def view_task():#할 일 목록보기, merge 진행
@@ -26,7 +27,7 @@ def view_task():#할 일 목록보기, merge 진행
         print("작업 목록 :")
         for i, task in enumerate(tasks, start=1): 
             status = "완료" if task["completed"] else "미완료"
-            print(f"{i}. {task['name']} - task['completed']")
+            print(f"{i}. {task['name']} - {task['completed']}")
 
 def complete_task(task_number):#할 일 완료
     tasks = load_task()
